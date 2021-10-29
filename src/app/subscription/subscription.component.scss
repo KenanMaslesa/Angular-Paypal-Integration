@@ -1,0 +1,21 @@
+main{
+  text-align: center;
+  padding: 30px;
+
+  button{
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+
+    &.cancel-subscription{
+      background-color: red;
+      border: red;
+    }
+    &.check-subscription{
+      background-color: #0bb0ff;
+      border: #0bb0ff;
+    }
+
+  }
+}

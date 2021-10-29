@@ -1,0 +1,13 @@
+
+<main>
+  <div #paypal></div>
+
+  <button class="check-subscription" (click)="checkPaypalSubscription()">CHECK subscription</button>
+  <button class="cancel-subscription" (click)="cancelPaypalSubscription()">CANCEL subscription</button>
+
+  <ng-container *ngIf="subscriptionService.subscriptionData">
+    <pre>
+      {{subscriptionService.subscriptionData | json}}
+    </pre>
+  </ng-container>
+</main>
